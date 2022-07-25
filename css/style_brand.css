@@ -296,9 +296,13 @@ body{
 }
 .global h4{
     font-size: 13px;
-    padding-bottom: 10vh;
+    padding-bottom: 1vh;
     letter-spacing: 2px;
     font-weight: 10px;
+}
+.global video{
+    width: 900px;
+    height: 600px;
 }
 
 
