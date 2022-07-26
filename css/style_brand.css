@@ -301,7 +301,7 @@ body{
     font-weight: 10px;
 }
 .global video{
-    width: 110vh;
+    width: 100%;
     height: 60vh;
 }
 
