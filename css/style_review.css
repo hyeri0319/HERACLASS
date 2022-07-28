@@ -22,6 +22,7 @@ body{
     font-size: 16px;
     line-height: 25px;
     color: white;
+    min-width: 1320px;
 }
 
 
@@ -148,13 +149,13 @@ body{
 /*영상*/
 .video{
     background-color: #fff;
-    padding: 95px 0;
+    padding: 50px 0;
     margin: 50px 0;
 }
 .video_inner{
     width: 1320px;
     height: 500px;
-    margin: auto;
+    margin: 0 auto;
 }
 .video_inner li{
     float: left;
@@ -171,6 +172,13 @@ body{
     padding-top: 20px;
     font-weight: 400;
 }
+.video_review{
+    width: 70vh;
+    height: 80vh;
+    margin-top: -140px;
+    margin-right: 20px;
+}
+
 /*배너*/
 .event{
     width: 1320px;
