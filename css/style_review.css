@@ -184,6 +184,7 @@ body{
     width: 1320px;
     height: 390px;
     margin: auto;
+    overflow: hidden;
 }
 .event li{
     float: left;
