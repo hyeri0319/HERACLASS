@@ -221,10 +221,6 @@ body{
 }
 .number{
     display: inline-block;
-    text-align: center;
-    position: absolute;
-    top: 1750px;
-    left: 910px;
 }
 .number li{
     padding: 40px 10px;
