@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+@font-face {
+    font-family: 'YUniverse-B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: white;}
+body{
+    font-family: 'Noto Sans KR';
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+    min-width: 1320px;
+}
+
+
+/*top*/
+#top{
+    background-color: rgba(48, 73, 56, 0.3);
+    width: 100%;                 /*너무 커서 px 대신 100%로 설정해야함*/
+    height: 95px;
+    position: absolute;          /*body가 기준*/
+    top: 0;                      /*위치 꼭 잡기*/
+    left: 0;
+    z-index: 99;
+    min-width: 1320px;
+}
+.top_inner{
+    width: 1320px;
+    height: 95px;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo{
+    width: 310px;
+    height: 51px;
+    float: left;
+}
+.menu1{
+    float: left;
+}
+.menu1> li{
+    float: left;
+}
+.menu1> li> a{
+    padding: 15px 50px 30px;
+    display: block;
+}
+.menu2{
+    float: right;
+}
+.menu2 li{
+    float: left;
+    padding: 15px 0 10px 15px;
+}
+.search, .basket, .login{
+    width: 20px;
+    height: 20px;
+    padding: 5px 5px 3px 1px;
+    margin-left: 5px;
+}
+/*hover*/
+.menu1> li> a:hover{
+    color: rgb(48, 73, 56);
+}
+.menu2 li a:hover{
+    background-color: rgba(48, 73, 56, 0.3);
+    border-radius: 50%;
+}
+
+
+/*서브메뉴 꾸미기*/
+.sub{
+    background-color: #f0e7db;
+    width: 100%;
+    height: 350PX;
+    position: absolute;/*body가 기준*/
+    left: 0;
+    display: none;     /*안보이게 만들어 주기!*/
+}
+.sub div{
+    width: 1320px;
+    margin: auto;
+}
+.sub ul{
+    float: left;
+}
+.sub ul a{
+    color: rgb(48, 73, 56);
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+}
+.sub ul a:hover{
+    font-weight: bold;
+}
+.store_img, .whatsnew_img{
+    float: right;
+}
+.store{
+    color: rgb(39, 43, 68);
+    font-family: 'YUniverse-B';
+    font-weight: bold;
+    font-size: 25px;
+    padding: 40px 0 20px 0;
+}
+/*.menu1 li:hover .sub{
+    display: block;
+}*/
+
+
+/*결제라인*/
+#pay{
+    background-color: #f0e7db;
+}
+.pay_inner{
+    width: 1320px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 120px 0;
+    position: relative;
+}
+.main_img{
+    width: 680px;
+}
+.product1{
+    position: absolute;
+    top: 230px;
+    left: 580px;
+}
+.pay_inner ul{
+    float: right;
+    color: #444444;
+    padding-top: 70px;
+    margin-right: 60px;
+}
+.pay_inner ul li{
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 13px;
+}
+.pay_inner ul li:nth-child(1){
+    border-bottom: 2px solid #fff;
+}
+.pay_inner ul li:nth-child(3){
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.pay_inner ul li:nth-child(5){
+    text-align: right;
+}
+.pay_inner ul li:nth-child(6){
+    padding: 0 0;
+}
+.pay_inner ul li:nth-child(7) img{
+    padding: 0 3px;
+    margin-left: 20px;
+}
+.pay_inner ul li:nth-child(7) img:hover{
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.big_font{
+    font-size: 30px;
+}
+.big_font2{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.line{
+    text-decoration: line-through;
+}
+.number{
+    float: left;
+}
+.number a{
+    color: #444444;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    border: 2px solid #fff;
+    padding: 2px 0 2px 25px;
+}
+.number a:hover{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/*키프레임*/
+@keyframes star{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(15px);}
+}
+.product1{
+    animation: star 1.5s  1.5s linear infinite alternate
+}
+
+
+/*qna*/
+#qna{
+    background-color: #f0e7db;
+}
+.qna{
+    width: 900px;
+    margin: 0 auto;
+}
+.qna a{
+    color: #444444;
+    border-bottom: 3px solid #fff;
+    letter-spacing: 3px;
+    padding: 10px 30px 5px 30px;
+}
+.qna a:hover{
+    background: url(../images/subsub_reddot.png) no-repeat 50% 0;
+}
+.qna ul li{
+    float: left;
+    margin: 0 30px 20px 120px;
+}
+
+
+/*wrap*/
+#wrap{
+    background-color: #f0e7db;
+}
+.wrap_inner{
+    width: 900px;
+    height: 10660px;
+    margin: 0 auto;
+}
+.wrap_inner img{
+    display: block;
+}
+
+
+/*footer*/
+#footer{
+    background-color: rgba(48, 73, 56, 0.8);
+}
+.footer_inner{
+    width: 1320px;
+    height: 300px;
+    margin: auto;
+    padding: 50px 0;
+}
+.f_logo{
+    display: inline-block;
+    width: 284px;
+    height: 47px;
+    float: left;
+    padding-bottom: 50px;
+}
+.tell{
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+.return{
+    padding-top: 20px;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+    display: block;
+    text-align: right;
+    font-size: 13px;
+}
+.icon{
+    display: inline-block;
+    padding: 0 0 20px 10px;
+    opacity: 0.5;
+}
+.icon:hover{
+    transition: all 0.2s;
+    opacity: 1;
+}
+.f_right h3{
+    padding: 30px 0 10px 0;
+}
+.mark{
+    display: inline-block;
+    width: 50px;
+    padding-top: 20px;
+}
+.terms{
+    display: inline-block;
+}
+.terms:hover{
+    text-decoration: underline;
+}
+
+
+/*fixed*/
+.fixed{
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+}
+.fixed a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(48, 73, 56, 0.8);
+    border-radius: 50%;
+}
+.fixed a:nth-child(1){
+    background: rgba(48, 73, 56, 0.8) url(../images/hover_basket.png) no-repeat center center;
+    background-size: 20px;
+    margin-bottom: 10px;
+}
+.fixed a:nth-child(2){
+    background: rgba(48, 73, 56, 0.8) url(../images/hover_top.png) no-repeat center center;
+    background-size: 20px;
+}
+.fixed a:hover{
+    opacity: 0.5;
+}

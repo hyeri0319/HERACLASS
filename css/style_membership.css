@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+@font-face {
+    font-family: 'YUniverse-B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: white;}
+body{
+    font-family: 'Noto Sans KR';
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+    min-width: 1320px;
+}
+
+
+/*top*/
+#top{
+    background-color: rgba(48, 73, 56, 0.3);
+    width: 100%;                 /*너무 커서 px 대신 100%로 설정해야함*/
+    height: 95px;
+    position: absolute;          /*body가 기준*/
+    top: 0;                      /*위치 꼭 잡기*/
+    left: 0;
+    min-width: 1320px;
+}
+.top_inner{
+    width: 1320px;
+    height: 95px;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo{
+    width: 310px;
+    height: 51px;
+    float: left;
+}
+.menu1{
+    float: left;
+}
+.menu1> li{
+    float: left;
+}
+.menu1> li> a{
+    padding: 15px 50px 30px;
+    display: block;
+}
+.menu2{
+    float: right;
+}
+.menu2 li{
+    float: left;
+    padding: 15px 0 10px 15px;
+}
+.search, .basket, .login{
+    width: 20px;
+    height: 20px;
+    padding: 5px 5px 3px 1px;
+    margin-left: 5px;
+}
+/*hover*/
+.menu1> li> a:hover{
+    color: rgb(48, 73, 56);
+}
+.menu2 li a:hover{
+    background-color: rgba(48, 73, 56, 0.3);
+    border-radius: 50%;
+}
+
+
+/*서브메뉴 꾸미기*/
+.sub{
+    background-color: #f0e7db;
+    width: 100%;
+    height: 350PX;
+    position: absolute;/*body가 기준*/
+    left: 0;
+    display: none;     /*안보이게 만들어 주기!*/
+}
+.sub div{
+    width: 1320px;
+    margin: auto;
+}
+.sub ul{
+    float: left;
+}
+.sub ul a{
+    color: rgb(48, 73, 56);
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+}
+.sub ul a:hover{
+    font-weight: bold;
+}
+.store_img, .whatsnew_img{
+    float: right;
+}
+.store{
+    color: rgb(39, 43, 68);
+    font-family: 'YUniverse-B';
+    font-weight: bold;
+    font-size: 25px;
+    padding: 40px 0 20px 0;
+}
+/*.menu1 li:hover .sub{
+    display: block;
+}*/
+
+
+/*banner*/
+#banner{
+    background: url(../images/banner_membership.png) no-repeat center top;
+    height: 513px;
+}
+
+
+/*wrap*/
+#wrap{
+    background-color: #fff;
+    color: #444444;
+    text-align: center;
+}
+.wrap_inner{
+    width: 1320px;
+    height: 970px;
+    margin: auto;
+    padding: 50px 0;
+}
+.wrap_inner> h3{
+    display: inline-block;
+    background-color: #304938;
+    padding: 8px 30px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+}
+.wrap_inner ul{
+    float: left;
+}
+.wrap_inner ul li{
+    float: left;
+}
+.card{
+    position: absolute;
+    left: 50%;
+    margin-left: -655px ;
+    padding-top: 60px;
+    width: 1320px;
+}
+.card li{
+    padding: 0 20px;
+}
+.text{
+    position: absolute;
+    left: 50%;
+    margin-left: -630px;
+    padding-top: 320px;
+    width: 1320px;
+}
+.bg_navy{
+    width: 400px;
+    height: 470px;
+    background: #272b44;
+    color: #fff;
+    border-radius: 50px 50px 50px 300px;
+}
+.bg_green{
+    width: 400px;
+    height: 470px;
+    margin: 0 30px;
+    background: #304938;
+    color: #fff;
+    border-radius: 50px;
+}
+.bg_gold{
+    width: 400px;
+    height: 470px;
+    background: #c99d3e;
+    color: #fff;
+    border-radius: 50px 50px 300px 50px;
+}
+.text p{
+    font-size: 20px;
+    padding: 25px 60px 0;
+    line-height: 30px;
+    text-align: left;
+}
+.text b{
+    font-size: 25px;
+}
+.text span{
+    background: #fff;
+    color: #272b44;
+    padding: 0 8px;
+}
+.text .g{
+    background: #fff;
+    color: #304938;
+    padding: 0 8px;
+}
+.text .gd{
+    background: #fff;
+    color: #c99d3e;
+    padding: 0 8px;
+}
+.pink{
+    color: #fcbd9b;
+}
+
+
+/*wrap2 제이쿼라*/
+#wrap2{
+    clear: both;
+    background: #fbf6ef;
+    color: #444444;
+    text-align: center;
+}
+.wrap2_inner{
+    width: 1320px;
+    margin: auto;
+    padding: 50px 0;
+}
+.wrap2_inner> h3{
+    display: inline-block;
+    background-color: #304938;
+    padding: 8px 30px;
+    margin: 50px 0 20px 0;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+}
+#board{
+    margin: 40px auto;
+}
+#board li{
+    text-align: left;
+}
+#board li a{
+    color: #304938;
+    font-size: 22px;
+    padding-left: 70px;
+}
+#board li img{
+    width: 30px;
+}
+.card_banner{
+    width: 1000px;
+    margin-top: 100px;
+}
+#board .on a{
+    border-bottom: 2px solid #c99d3e;
+}
+/*키프레임*/
+
+
+/*footer*/
+#footer{
+    background-color: rgba(48, 73, 56, 0.8);
+}
+.footer_inner{
+    width: 1320px;
+    height: 300px;
+    margin: auto;
+    padding: 50px 0;
+}
+.f_logo{
+    display: inline-block;
+    width: 284px;
+    height: 47px;
+    float: left;
+    padding-bottom: 50px;
+}
+.tell{
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+.return{
+    padding-top: 20px;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+    display: block;
+    text-align: right;
+    font-size: 13px;
+}
+.icon{
+    display: inline-block;
+    padding: 0 0 20px 10px;
+    opacity: 0.5;
+}
+.icon:hover{
+    transition: all 0.2s;
+    opacity: 1;
+}
+.f_right h3{
+    padding: 30px 0 10px 0;
+}
+.mark{
+    display: inline-block;
+    width: 50px;
+    padding-top: 20px;
+}
+.terms{
+    display: inline-block;
+}
+.terms:hover{
+    text-decoration: underline;
+}
+
+
+/*fixed*/
+.fixed{
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+}
+.fixed a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(48, 73, 56, 0.8);
+    border-radius: 50%;
+}
+.fixed a:nth-child(1){
+    background: rgba(48, 73, 56, 0.8) url(../images/hover_basket.png) no-repeat center center;
+    background-size: 20px;
+    margin-bottom: 10px;
+}
+.fixed a:nth-child(2){
+    background: rgba(48, 73, 56, 0.8) url(../images/hover_top.png) no-repeat center center;
+    background-size: 20px;
+}
+.fixed a:hover{
+    opacity: 0.5;
+}
